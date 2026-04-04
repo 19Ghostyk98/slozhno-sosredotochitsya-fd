@@ -1,5 +1,493 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 10px;
+  font-family: 'IBM Plex Mono', 'Courier New', monospace;
+}
+
+.decorated-zone {
+  position: relative;
+}
+
+.decorated-zone::before {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--accent-color);
+  border-right: 1px solid var(--accent-color);
+}
+
+.decorated-zone::after {
+  content: '';
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  width: 25px;
+  height: 25px;
+  border-bottom: 1px solid var(--accent-color);
+  border-left: 1px solid var(--accent-color);
+}
+
+.header__rec {
+  position: absolute;
+  top: 0px;
+  right: 6px;
+  display: var(--rec-display, none);
+  gap: 10px;
+  align-items: center;
+  color: var(--accent-color);
+  font-size: 18px;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.header__rec::after {
+  content: '';
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  box-shadow: 0 0 4px var(--accent-color);
+}
+
+.header {
+  display: grid;
+  grid-template-rows: 1fr auto 1fr;
+  min-height: 668px;
+  height: 100vh;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.header__theme-menu {
+  justify-self: end;
+  align-self: start;
+  margin-top: 10px;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header__theme-menu-button {
+  padding: 0 13px;
+  font-size: 18px;
+  line-height: 1.4;
+  color: var(--accent-color);
+  text-transform: lowercase;
+  transition: all 0.2s ease;
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
+  border: 1px solid var(--accent-color);
+}
+
+.header__theme-menu-button:hover:not(.header__theme-menu-button_active) {
+  border: 1px solid var(--border-hover);
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: none;
+  border-bottom: 1px solid var(--accent-color);
+}
+
+.header__title {
+  font-family: 'IBM Plex Mono','Courier New', monospace;
+  font-weight: 700;
+  font-style: bold;
+  font-size: var(--title-font-size-mobile);
+  color: var(--title-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  line-height: 0.82;
+  margin: 0 0 15px 0;
+}
+
+.title-decor {
+  background-color: var(--accent-color-bg);
+  color: var(--accent-color-text);
+}
+
+.header__description {
+  align-self: center;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.3;
+  margin-bottom: 43px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--section-gap);
+  margin-bottom: 40px;
+}
+
+.decorated-zone::before {
+  top: 0px;
+  right: 0px;
+}
+
+.decorated-zone::after {
+  bottom: 20px;
+  left: 0px;
+}
+
+.header__theme-menu-list {
+  margin-top: 54px;
+}
+
+.header__description {
+  margin-bottom: 37px;
+}
+
+.header {
+  margin-bottom: 30px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+.section__title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--accent-color);
+}
+
+.section__cards {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.card__title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.card__title--thin {
+  font-weight: 400;
+}
+
+.card__title--thin__how {
+    margin-top: 10px;
+  }
+
+.card__text {
+  font-weight: 400;
+}
+
+.accent-link {
+  text-shadow: 2px 2px 0 var(--link-shadow);
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.accent-link:hover {
+  border-bottom: 1px solid var(--text-color);
+}
+
+.accent-link:focus-visible {
+  outline: none;
+  border: 1px solid var(--text-color);
+}
+
+.section__gallery {
+  display: flex;
+  flex-direction: column;
+}
+
+.section__gallery .card__title {
+  font-size: 18px;
+  font-weight: 700;
+  background-color: var(--accent-color-bg);
+  color: var(--accent-color-text);
+  width: 100%;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: -10px;
+}
+
+.gallery__image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 668px;
+  height: 100vh;
+  position: relative;
+}
+
+.footer__title {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: bold;
+  font-size: var(--title-font-size-mobile);
+  color: var(--title-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
+  line-height: 0.82;
+}
+
+@media (min-width: 768px) {
+  .page {
+    padding: 20px;
+  }
+  .decorated-zone::before {
+    top: 0px;
+    right: 0px;
+  }
+  
+  .decorated-zone::after {
+    bottom: 29px;
+    left: 0px;
+  }
+  
+  .header__rec {
+    top: 0px;
+    right: 7px;
+    gap: 7px;
+  }
+  
+  .header__theme-menu {
+    justify-self: end;
+    align-self: center;
+    margin-top: -25px;
+  }
+
+  .header {
+    margin-bottom: 41px;
+  }
+  
+  .header__title {
+    font-size: var(--title-font-size-desktop);
+    margin-left: -20px;
+    margin-top: -20px;
+  }
+  
+  .header__description {
+    width: 50%;
+    justify-self: end;
+    margin-bottom: 57px;
+  }
+  
+  .section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+  }
+  
+  .section__title {
+    grid-column: 1 / 2;
+    margin-top: 0;
+  }
+
+  .section__cards {
+    grid-column: 2 / 3;
+  }
+  
+  .section__why .section__cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title__what {
+    margin-top: 29px;
+    width: 26%;
+  }
+  
+  .section__what {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .section__what .section__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .card__title--thin__how {
+    margin-top: 12px;
+  }
+
+  .section__how .section__cards {
+    display: grid;
+    gap: 20px;
+  }
+  
+  .section__how .card__how-item {
+    grid-column: 1 / -1;
+  }
+
+  .section__how {
+    margin-top: 29px;
+  }
+  
+  .section__gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .section__gallery .card__title {
+    width: 100%;
+    margin-top: 29px;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .gallery__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .gallery__image:nth-child(1) {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+  
+  .gallery__image:nth-child(2) {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+  }
+  
+  .gallery__image:nth-child(3) {
+    grid-column: 1 / 2;
+    grid-row: 2 / 4;
+  }
+  
+  .gallery__image:nth-child(4) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+  
+  .gallery__image:nth-child(5) {
+    grid-column: 2 / 4;
+    grid-row: 3 / 4;
+  }
+
+  .footer__title {
+    font-size: var(--title-font-size-desktop);
+    margin-top: 39px;
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .header__theme-menu-button {
+    margin-top: 23px;
+  }
+  
+  .header {
+    margin-bottom: 40px;
+  }
+  .decorated-zone::before {
+    top: 0px;
+    right: 0px;
+  }
+  
+  .decorated-zone::after {
+    bottom: 40px;
+    left: 0px;
+  }
+
+  .header__rec {
+    top: 0px;
+    right: 7px;
+    gap: 9px;
+  }
+
+  .header__theme-menu {
+    justify-self: center;
+    align-self: start;
+    margin-top: -78px;
+  }
+  
+  .header__theme-menu-list {
+    flex-direction: row;
+  }
+  
+  .section {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+  }
+
+  .section__gallery {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .section__gallery .card__title {
+    width: 100%;
+    margin-top: 0px;
+  }
+  
+  .section__gallery .gallery {
+    width: 100%;
+  }
+
+  .section__what {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .section__what .section__title {
+    width: 37%;
+  }
+
+  .title__what {
+    margin-top: 0px;
+  }
+  .section__what .section__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .section__how {
+    margin-top: 0px;
+  }
+  
+  .gallery {
+    margin-top: 10px;
+  }
+
+  .content {
+    gap: 80px;
+  }
 }
