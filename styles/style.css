@@ -4,9 +4,9 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
-  background-attachment: scroll;
+  background-attachment: fixed;
   padding: 0px;
-  font-family: 'IBM Plex Mono', 'Courier New', monospace;
+  font-family: "IBM Plex Mono", "Courier New", monospace;
   max-width: 1440px;
   margin: 0 auto;
   width: 100%;
@@ -28,7 +28,7 @@
 }
 
 .decorated-zone::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 10px;
   right: 10px;
@@ -39,7 +39,7 @@
 }
 
 .decorated-zone::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 10px;
   left: 10px;
@@ -63,7 +63,7 @@
 }
 
 .header__rec::after {
-  content: '';
+  content: "";
   width: 13px;
   height: 13px;
   border-radius: 50%;
@@ -122,7 +122,7 @@
 }
 
 .header__title {
-  font-family: 'IBM Plex Mono','Courier New', monospace;
+  font-family: "IBM Plex Mono", "Courier New", monospace;
   font-weight: 700;
   font-style: bold;
   font-size: var(--title-font-size-mobile);
@@ -189,8 +189,8 @@
 }
 
 .card__title--thin__how {
-    margin-top: 10px;
-  }
+  margin-top: 10px;
+}
 
 .card__text {
   font-weight: 400;
@@ -247,7 +247,7 @@
 }
 
 .footer__title {
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: "IBM Plex Mono", monospace;
   font-weight: bold;
   font-size: var(--title-font-size-mobile);
   color: var(--title-color);
@@ -264,25 +264,25 @@
   }
 
   .content + .footer {
-  margin-top: 0px;
-}
+    margin-top: 0px;
+  }
 
   .decorated-zone::before {
     top: 20px;
     right: 20px;
   }
-  
+
   .decorated-zone::after {
     bottom: 20px;
     left: 20px;
   }
-  
+
   .header__rec {
     top: 20px;
     right: 27px;
     gap: 7px;
   }
-  
+
   .header__theme-menu {
     justify-self: end;
     align-self: center;
@@ -292,25 +292,25 @@
   .header {
     margin-bottom: 41px;
   }
-  
+
   .header__title {
     font-size: var(--title-font-size-desktop);
     margin-left: -20px;
     margin-top: 3px;
   }
-  
+
   .header__description {
     width: 50%;
     justify-self: end;
     margin-bottom: 1px;
   }
-  
+
   .section {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 20px;
   }
-  
+
   .section__title {
     grid-column: 1 / 2;
     margin-top: 0;
@@ -319,7 +319,7 @@
   .section__cards {
     grid-column: 2 / 3;
   }
-  
+
   .section__why .section__cards {
     display: flex;
     flex-direction: column;
@@ -329,7 +329,7 @@
     margin-top: 29px;
     width: 26%;
   }
-  
+
   .section__what {
     display: flex;
     flex-direction: column;
@@ -350,7 +350,7 @@
     display: grid;
     gap: 20px;
   }
-  
+
   .section__how .card__how-item {
     grid-column: 1 / -1;
   }
@@ -358,24 +358,24 @@
   .section__how {
     margin-top: 29px;
   }
-  
+
   .section__gallery {
     display: flex;
     flex-direction: column;
     gap: 30px;
   }
-  
+
   .section__gallery .card__title {
     width: 100%;
     margin-top: 29px;
   }
-  
+
   .gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
-  
+
   .gallery__image {
     width: 100%;
     height: 100%;
@@ -386,22 +386,22 @@
     grid-column: 1 / 3;
     grid-row: 1 / 2;
   }
-  
+
   .gallery__image:nth-child(2) {
     grid-column: 3 / 4;
     grid-row: 1 / 3;
   }
-  
+
   .gallery__image:nth-child(3) {
     grid-column: 1 / 2;
     grid-row: 2 / 4;
   }
-  
+
   .gallery__image:nth-child(4) {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
   }
-  
+
   .gallery__image:nth-child(5) {
     grid-column: 2 / 4;
     grid-row: 3 / 4;
@@ -414,11 +414,10 @@
 }
 
 @media (min-width: 1024px) {
-
   .header__theme-menu-button {
     margin-top: 23px;
   }
-  
+
   .header,
   .content,
   .footer {
@@ -429,7 +428,7 @@
     top: 20px;
     right: 20px;
   }
-  
+
   .decorated-zone::after {
     bottom: 20px;
     left: 20px;
@@ -446,11 +445,11 @@
     align-self: start;
     margin-top: -78px;
   }
-  
+
   .header__theme-menu-list {
     flex-direction: row;
   }
-  
+
   .section {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -461,12 +460,12 @@
     display: flex;
     flex-direction: column;
   }
-  
+
   .section__gallery .card__title {
     width: 100%;
     margin-top: 0px;
   }
-  
+
   .section__gallery .gallery {
     width: 100%;
   }
@@ -476,7 +475,7 @@
     flex-direction: column;
     gap: 20px;
   }
-  
+
   .section__what .section__title {
     width: 37%;
   }
@@ -493,7 +492,7 @@
   .section__how {
     margin-top: 0px;
   }
-  
+
   .gallery {
     margin-top: 10px;
   }

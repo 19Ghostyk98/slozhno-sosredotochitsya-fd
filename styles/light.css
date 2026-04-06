@@ -13,6 +13,22 @@
   --rec-display: none;
 }
 
+:root.theme-light .header__theme-menu-button {
+  color: #353430;
+}
+
+:root.theme-light .header__theme-menu-button_active {
+  border: 1px solid #353430;
+}
+
+:root.theme-light .header__theme-menu-button:hover:not(.header__theme-menu-button_active) {
+  border: 1px solid rgba(53, 52, 48, 0.4);
+}
+
+:root.theme-light .decorated-zone::before,
+:root.theme-light .decorated-zone::after {
+  border-color: #353430;
+}
 :root.theme-light .section__title {
   color: #353430;
 }
