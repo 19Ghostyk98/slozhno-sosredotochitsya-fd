@@ -13,6 +13,10 @@
   --rec-display: none;
 }
 
+:root.theme-light .section__title {
+  color: #353430;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
       --bg-color: #FFF1F7;
@@ -28,4 +32,8 @@
       --bg-image: url('../images/cover-image-light.png');
       --rec-display: none;
     }
+  
+    :root .section__title {
+    color: #353430;
+  }
 }
