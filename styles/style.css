@@ -58,6 +58,10 @@
     border-color: #353430;
   }
 
+  .header__theme-menu-button:hover {
+    border-color: rgba(53, 52, 48, 0.4);
+  }
+
   .decorated-zone::before,
   .decorated-zone::after {
     border-color: #353430;
@@ -70,7 +74,19 @@
   .section__title {
     color: #353430;
   }
+
+  .header__title {
+    color: #FFC2E6;  /* розовый заголовок в светлой теме */
+    text-shadow: 4px 4px 0 #FF8DCB;
+  }
+
+  .title-decor {
+    background-color: #FF8DCB;
+    color: #353430;
+  }
 }
+
+
 
 .decorated-zone {
   position: relative;
