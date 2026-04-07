@@ -50,7 +50,7 @@
 }
 
 :root.theme-light .header__title {
-  text-shadow: 4px 4px 0 #FF8DCB;
+  text-shadow: 4px 4px 0 #ff8dcb;
 }
 
 @media (prefers-color-scheme: light) {
@@ -80,12 +80,12 @@
   }
 
   .header__title {
-    color: #FFC2E6;  /* розовый заголовок в светлой теме */
-    text-shadow: 4px 4px 0 #FF8DCB;
+    color: #ffc2e6;
+    text-shadow: 4px 4px 0 #ff8dcb;
   }
 
   .title-decor {
-    background-color: #FF8DCB;
+    background-color: #ff8dcb;
     color: #353430;
   }
 }
@@ -249,11 +249,11 @@
   font-weight: 400;
 }
 
-.title__what{
+.title__what {
   margin-top: 10px;
 }
 
-.title__how{
+.title__how {
   margin-top: 10px;
 }
 
@@ -540,7 +540,7 @@
     margin-top: 10px;
   }
 
-  .card__title--thin__how{
+  .card__title--thin__how {
     margin-top: 9px;
   }
 

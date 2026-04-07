@@ -1,15 +1,15 @@
 :root.theme-dark {
   --bg-color: #000028;
-  --text-color: #F1B2CE;
-  --title-color: #DB00FF;
-  --title-shadow: #FF0070;
-  --accent-color: #FF0070;
-  --accent-color-bg: #FF0070;
+  --text-color: #f1b2ce;
+  --title-color: #db00ff;
+  --title-shadow: #ff0070;
+  --accent-color: #ff0070;
+  --accent-color-bg: #ff0070;
   --accent-color-text: #000028;
-  --border-color: #FF0070;
+  --border-color: #ff0070;
   --border-hover: rgba(255, 0, 112, 0.4);
-  --focus-outline: #FF0070;
-  --link-shadow: #FF0070;
-  --bg-image: url('../images/cover-image-dark.png');
+  --focus-outline: #ff0070;
+  --link-shadow: #ff0070;
+  --bg-image: url("../images/cover-image-dark.png");
   --rec-display: flex;
 }
