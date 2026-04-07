@@ -2,7 +2,8 @@
   --bg-color: #FFF1F7;
   --text-color: #353430;
   --title-color: #FFC2E6;
-  --accent-color: #FF8DCB;
+  --title-shadow: #FF8DCB;
+  --accent-color: #353430;
   --accent-color-bg: #FF8DCB;
   --accent-color-text: #353430;
   --border-color: #353430;
@@ -18,7 +19,8 @@
       --bg-color: #FFF1F7;
       --text-color: #353430;
       --title-color: #FFC2E6;
-      --accent-color: #FF8DCB;
+      --title-shadow: #FF8DCB;
+      --accent-color: #353430;
       --accent-color-bg: #FF8DCB;
       --accent-color-text: #353430;
       --border-color: #353430;
