@@ -2,6 +2,7 @@
   --bg-color: #000028;
   --text-color: #f1b2ce;
   --title-color: #db00ff;
+  --title-shadow: #ff0070;
   --accent-color: #ff0070;
   --accent-color-bg: #ff0070;
   --accent-color-text: #000028;
@@ -9,9 +10,7 @@
   --border-hover: rgba(255, 0, 112, 0.4);
   --focus-outline: #ff0070;
   --link-shadow: #ff0070;
-  --title-shadow-light: #ff8dcb;
-  --title-shadow-dark: #ff0070;
-  --bg-image: url("../images/background-dark.png");
+  --bg-image: url("../images/cover-image-dark.png");
   --rec-display: flex;
   --main-font: "IBM Plex mono", monospace;
   --title-font-size-mobile: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
